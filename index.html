@@ -1,71 +1,138 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vize plusTV web" />
-    <meta name="description" content="VizePlusTV web - info - nábor - videa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VizePlusTV</title>
-    <link rel="icon" href="icon.jpg" type="image/jpeg">
-    <link rel="stylesheet" href="/Style.css">
-    <style>
-        
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
-        a {
-            color: #24a0ed; 
-            text-decoration: none; 
-            transition: color 0.3s; 
-        }
-        a:hover {
-            color: #0074D9; 
-        }
-                .button {
-            background-color: #007bff; 
-            border: none;
-            color: white; 
-            padding: 15px 32px; 
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: .25rem; 
-        }
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_logo">
+          <a href="#">
+            <img src="icon.jpg" alt="Error" />
+            <h2>VizePlusTV</h2>
+          </a>
+        </div>
 
-        .button:hover {
-            background-color: #0056b3; 
-        }
+        <input type="checkbox" id="click" />
+        <label for="click">
+          <i class="menu_btn bx bx-menu"></i>
+          <i class="close_btn bx bx-x"></i>
+        </label>
 
-        .icon-right {
-            margin-left: .5em; 
-            }
-        
-    </style>
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "WebSite",
-            "name": "VizePlusTV",
-            "url": "https://vizeplustv.github.io/"
-        }
-    </script>
-</head>
-<body>
+        <ul>
+          <li><a href="#">Domu</a></li>
+          <li><a href="#about">Novinky</a></li>
+          <li><a href="#service">Videa</a></li>
+          <li><a href="#why">Tým</a></li>
+          <li><a href="#gallery">ZšZdice</a></li>
+          <li><a href="#contact">Konktakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h2>O nás</h2>
-    <p>Jsme televize školi Zšzdice. Vize plus byla založena Matyášem Kounovským. Natáčíme pořady a školní akce. Naše videa můžete najít některé na YouTube kanálu Zšzdice a možná na tomto webu. Všechna videa jsou vysílána ve škole.</p>
-    <h3>Hledáme nové členy</h3>
-    <p>Aktuálně hledáme nové členy Vize Plus. Koho hledáme? To zatím nevím.</p>
-        <a href="https://vizeplustv.github.io/videa/"><button class="button">Videa <span class="icon-right">→</span></button></a> <a href="https://www.zszdice.cz/"><button class="button">Zš zdice <span class="icon-right">→</span></button></a>
-    <a href="https://vizeplustv.github.io/tym"><button class="button">Vize Plus Tým<span class="icon-right">→</span></button></a>
+    <!-- Hero Section -->
+    <section class="hero_section">
+      <div class="section_container">
+        <div class="hero_container">
+          <div class="text_section">
+            <h2>Televize školi ZšZdice</h2>
+            <h3></h3>
+            <p>
+              Vítejte na webu VizePlusTV
+            </p>
 
-    <h2>Web</h2>
-    <p>Tento web je v alfa verzi. Našli jste chybu nebo máte nápad na vylepšení? Napište nám na:</p>
-    <a href="https://github.com/VizePlusTV/VizePlusTV.github.io/issues"><button class="button">Nahlásit chybu 🛑<span class="icon-right">→</span></button></a>
-    <p>Děkujeme, že pomáháte opravovat web Vize Plus.</p>
-</body>
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about_us" id="about">
+      <div class="section_container">
+        <div class="about_container">
+          <div class="text_section">
+            <h2 class="section_title">O nás</h2>
+            <p>
+              Jseme školiní televize ZšZdice. VizePlus byla založena Matyášem kounovským v roce 2023. Natáčíme školní akce a videa z školního prostředí.
+            </p>
+          </div>
+
+          <div class="image_section">
+            <img src="icon.jpg" alt="coffee" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="section_title">Konktakt</h2>
+      <div class="section_container">
+        <div class="contact_container">
+          <div class="contact_form">
+            <form action="#">
+              
+              
+            
+          <div class="contact_text">
+            <div class="contact_items">
+              
+            </div>
+            <div class="contact_items">
+              <i class="bx bxs-envelope"></i>
+              <div class="contact_details">
+                <h3>E-mail</h3>
+                <p>vizeplus.info@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact_items">
+            </div>
+            <div class="contact_items">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="section_container">
+        <div class="footer_section">
+          <div class="footer_logo">
+            <a href="index.html">
+              <img src="icon.jpg" alt="Coffee Logo" />
+              <h2>VizePlusTV</h2>
+            </a>
+          </div>
+
+          <div class="useful_links">
+            <h3>Odkazy</h3>
+            <ul>
+              <li><a href="#about">Domov</a></li>
+              <li><a href="#service">Novinky</a></li>
+              <li><a href="#why">Videa</a></li>
+              <li><a href="#gallery">Tým</a></li>
+              <li><a href="">ZšZdice</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </div>
+
+          
+              
+            </ul>
+          </div>
+
+          
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
